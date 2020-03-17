@@ -1,0 +1,133 @@
+EESchema Schematic File Version 4
+LIBS:PWR_Supply-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Regulator_Linear:LM317_TO3 U4
+U 1 1 5E691F15
+P 5300 3400
+F 0 "U4" H 5300 3642 50  0000 C CNN
+F 1 "LM317_TO3" H 5300 3551 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-3" H 5300 3600 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm317.pdf" H 5300 3400 50  0001 C CNN
+	1    5300 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5E70BB61
+P 5750 3600
+F 0 "R1" H 5820 3646 50  0000 L CNN
+F 1 "240R" H 5820 3555 50  0000 L CNN
+F 2 "" V 5680 3600 50  0001 C CNN
+F 3 "~" H 5750 3600 50  0001 C CNN
+	1    5750 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5E70BBDF
+P 5750 4000
+F 0 "R2" H 5820 4046 50  0000 L CNN
+F 1 "402R" H 5820 3955 50  0000 L CNN
+F 2 "" V 5680 4000 50  0001 C CNN
+F 3 "~" H 5750 4000 50  0001 C CNN
+	1    5750 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 3400 5750 3400
+Wire Wire Line
+	5750 3800 5300 3800
+Wire Wire Line
+	5300 3800 5300 3700
+Connection ~ 5750 3800
+Wire Wire Line
+	5750 3800 5750 3850
+Wire Wire Line
+	5000 3400 4850 3400
+Wire Wire Line
+	5750 4150 5750 4200
+$Comp
+L power:GND #PWR0102
+U 1 1 5E70BCD9
+P 5750 4250
+F 0 "#PWR0102" H 5750 4000 50  0001 C CNN
+F 1 "GND" H 5755 4077 50  0000 C CNN
+F 2 "" H 5750 4250 50  0001 C CNN
+F 3 "" H 5750 4250 50  0001 C CNN
+	1    5750 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 4200 5750 4250
+Connection ~ 5750 4200
+Connection ~ 5750 3400
+Wire Wire Line
+	5750 4200 6100 4200
+Wire Wire Line
+	5750 3400 6100 3400
+$Comp
+L Device:CP1 C9
+U 1 1 5E70BEDF
+P 6100 3750
+F 0 "C9" H 6215 3796 50  0000 L CNN
+F 1 "10nF" H 6215 3705 50  0000 L CNN
+F 2 "" H 6100 3750 50  0001 C CNN
+F 3 "~" H 6100 3750 50  0001 C CNN
+	1    6100 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C8
+U 1 1 5E70BF21
+P 4850 3700
+F 0 "C8" H 4965 3746 50  0000 L CNN
+F 1 "10nF" H 4965 3655 50  0000 L CNN
+F 2 "" H 4850 3700 50  0001 C CNN
+F 3 "~" H 4850 3700 50  0001 C CNN
+	1    4850 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 3750 5750 3800
+Wire Wire Line
+	5750 3450 5750 3400
+Wire Wire Line
+	6100 3600 6100 3400
+Connection ~ 6100 3400
+Wire Wire Line
+	6100 3400 6450 3400
+Wire Wire Line
+	6100 3900 6100 4200
+Connection ~ 6100 4200
+Wire Wire Line
+	6100 4200 6450 4200
+Wire Wire Line
+	5750 4200 4850 4200
+Wire Wire Line
+	4850 4200 4850 3850
+Wire Wire Line
+	4850 3550 4850 3400
+Connection ~ 4850 3400
+Wire Wire Line
+	4850 3400 4700 3400
+Text HLabel 6450 3400 2    50   Input ~ 0
++3.3
+Text HLabel 6450 4200 2    50   Input ~ 0
+GND
+Text HLabel 4700 3400 0    50   Input ~ 0
+VCC
+$EndSCHEMATC

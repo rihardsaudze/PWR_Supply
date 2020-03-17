@@ -1,0 +1,107 @@
+EESchema Schematic File Version 4
+LIBS:PWR_Supply-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Regulator_Linear:LM7805_TO220 U3
+U 1 1 5E69115B
+P 5850 3000
+F 0 "U3" H 5850 3242 50  0000 C CNN
+F 1 "LM7805_TO220" H 5850 3151 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5850 3225 50  0001 C CIN
+F 3 "http://www.fairchildsemi.com/ds/LM/LM7805.pdf" H 5850 2950 50  0001 C CNN
+	1    5850 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C6
+U 1 1 5E6911CD
+P 5350 3150
+F 0 "C6" H 5465 3196 50  0000 L CNN
+F 1 "10nF" H 5465 3105 50  0000 L CNN
+F 2 "" H 5350 3150 50  0001 C CNN
+F 3 "~" H 5350 3150 50  0001 C CNN
+	1    5350 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C7
+U 1 1 5E691203
+P 6300 3150
+F 0 "C7" H 6415 3196 50  0000 L CNN
+F 1 "10nF" H 6415 3105 50  0000 L CNN
+F 2 "" H 6300 3150 50  0001 C CNN
+F 3 "~" H 6300 3150 50  0001 C CNN
+	1    6300 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 3300 5850 3400
+Wire Wire Line
+	5850 3400 5350 3400
+Wire Wire Line
+	5350 3400 5350 3300
+Wire Wire Line
+	5850 3400 6300 3400
+Wire Wire Line
+	6300 3400 6300 3300
+Connection ~ 5850 3400
+Text HLabel 5150 3000 0    50   Input ~ 0
+VCC
+Text HLabel 6650 3000 2    50   Input ~ 0
++5
+Text HLabel 6650 3400 2    50   Input ~ 0
+GND
+Wire Wire Line
+	6650 3400 6300 3400
+Connection ~ 6300 3400
+Wire Wire Line
+	5150 3000 5350 3000
+Connection ~ 5350 3000
+Wire Wire Line
+	5350 3000 5550 3000
+Wire Wire Line
+	6300 3000 6650 3000
+Connection ~ 6300 3000
+Wire Wire Line
+	6150 3000 6300 3000
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 5E70F11E
+P 5350 2900
+F 0 "#FLG0103" H 5350 2975 50  0001 C CNN
+F 1 "PWR_FLAG" H 5350 3074 50  0000 C CNN
+F 2 "" H 5350 2900 50  0001 C CNN
+F 3 "~" H 5350 2900 50  0001 C CNN
+	1    5350 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 3000 5350 2900
+Connection ~ 5350 3400
+Wire Wire Line
+	5350 3400 5350 3450
+$Comp
+L power:GND #PWR0101
+U 1 1 5E6913A9
+P 5350 3450
+F 0 "#PWR0101" H 5350 3200 50  0001 C CNN
+F 1 "GND" H 5355 3277 50  0000 C CNN
+F 2 "" H 5350 3450 50  0001 C CNN
+F 3 "" H 5350 3450 50  0001 C CNN
+	1    5350 3450
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
