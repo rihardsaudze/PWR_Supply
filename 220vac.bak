@@ -87,15 +87,8 @@ Text HLabel 4300 2250 2    50   Input ~ 0
 VCC
 Text HLabel 4300 2650 2    50   Input ~ 0
 GND
-$Comp
-L Connector:Screw_Terminal_01x02 J1
-U 1 1 5E68943B
-P 1950 2300
-F 0 "J1" H 1870 1975 50  0000 C CNN
-F 1 "220VAC in" H 1870 2066 50  0000 C CNN
-F 2 "" H 1950 2300 50  0001 C CNN
-F 3 "~" H 1950 2300 50  0001 C CNN
-	1    1950 2300
-	-1   0    0    1   
-$EndComp
+Text HLabel 2150 2200 0    50   Input ~ 0
+220VAC1
+Text HLabel 2150 2300 0    50   Input ~ 0
+220VAC2
 $EndSCHEMATC

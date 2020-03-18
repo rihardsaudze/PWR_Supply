@@ -1,3 +1,3 @@
 (sym_lib_table
-  (lib (name screw_terminal_01x02)(type Legacy)(uri ${KIPRJMOD}/libraries/screw_terminal_01x02.lib)(options "")(descr ""))
+  (lib (name screw_terminal_01x02)(type Legacy)(uri ${KIPRJMOD}/libraries/screw_terminal_01x02.lib)(options "")(descr "")(disabled))
 )
